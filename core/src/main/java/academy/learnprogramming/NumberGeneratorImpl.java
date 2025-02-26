@@ -1,8 +1,11 @@
 package academy.learnprogramming;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Random;
 
-public class NumberGeneratorImpl implements NumberGenerator{
+@Component("generator")
+public class NumberGeneratorImpl implements NumberGenerator {
 
     private final Random random = new Random();
     private final int maxNumber = 100;
