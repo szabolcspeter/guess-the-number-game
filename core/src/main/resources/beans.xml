@@ -6,7 +6,7 @@
 
     <bean id="numberGenerator" class="szabolcspeter.learnprogramming.NumberGeneratorImpl" />
 
-    <bean id="game" class="szabolcspeter.learnprogramming.GameImpl" >
+    <bean id="game" class="szabolcspeter.learnprogramming.GameImpl" init-method="reset">
 <!--        <constructor-arg ref="numberGenerator" />-->
         <property name="numberGenerator" ref="numberGenerator" />
     </bean>

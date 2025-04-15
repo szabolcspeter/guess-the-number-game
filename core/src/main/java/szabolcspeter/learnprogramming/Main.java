@@ -31,9 +31,6 @@ public class Main {
         // get number generator bean from context (container)
         Game game = context.getBean(Game.class);
 
-        // call reset method()
-        game.reset();
-
         // close context (container)
         context.close();
     }
